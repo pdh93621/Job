@@ -1,0 +1,11 @@
+개요
+
+Get_Data
+    ▶합성(compostion): 크로마키를 이용하여 색 대비를 통해 손 모양 추출
+    ▶현실(real): 이미 학습된 Yolov3를 활용하여 손의 좌표를 대략적으로 탐색 후 .txt로 저장
+    ▶첨가(augmentation): 이미지를 좌우 반전, 밝기, 채도, 색상 조절하여 이미지 첨가
+	
+Service
+    ▶PPT UI: 손동작에 명령어를 매칭(완료시 ppt_elements의 .txt로 저장)
+    ▶gestures2command: 명령어를 클래스화
+	-> UI를 통해 만들어진 텍스트 파일로 부터 동작과 클래스를 매칭
